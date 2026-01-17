@@ -1,0 +1,70 @@
+.circle-button {
+  width: clamp(90px, 20vw, 160px);
+  height: clamp(90px, 20vw, 160px);
+  border-radius: 50%;
+  background-color: var(--grey-100);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.opponent:hover .circle-button,
+.opponent:focus-visible .circle-button {
+  box-shadow:
+    0 0 20px var(--g1),
+    0 0 40px var(--g2),
+    0 0 60px var(--g3),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.04);
+}
+
+.player-you {
+  --g1: var(--glow-warm);
+  --g2: var(--glow-warm-medium);
+  --g3: var(--glow-warm-soft);
+}
+
+.is-pvp {
+  --g1: var(--glow-cool);
+  --g2: var(--glow-cool-medium);
+  --g3: var(--glow-cool-soft);
+}
+
+.is-bot {
+  --g1: var(--glow-cosmic);
+  --g2: var(--glow-cosmic-medium);
+  --g3: var(--glow-cosmic-soft);
+}
+
+.bot-easy {
+  --g1: var(--glow-easy);
+  --g2: var(--glow-easy-medium);
+  --g3: var(--glow-easy-soft);
+}
+
+.bot-medium {
+  --g1: var(--glow-medium);
+  --g2: var(--glow-medium-medium);
+  --g3: var(--glow-medium-soft);
+}
+
+.bot-hard {
+  --g1: var(--glow-hard);
+  --g2: var(--glow-hard-medium);
+  --g3: var(--glow-hard-soft);
+}
+
+.current-player .circle-button {
+  box-shadow:
+    0 0 20px var(--g1),
+    0 0 40px var(--g2),
+    0 0 60px var(--g3),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.player-you.current-player .circle-button,
+.player-opponent.current-player .circle-button {
+  animation: glow-pulse 1.5s ease-in-out infinite;
+}

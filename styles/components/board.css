@@ -1,0 +1,53 @@
+.game-board {
+  width: clamp(250px, 65vw, var(--board-size));
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-inline: auto;
+  position: relative;
+}
+
+.board-cell {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  align-items: center;  /* place-items? */
+  justify-items: center;
+  cursor: pointer;
+  position: relative;
+  border-right: var(--line) solid var(--line-color);
+  border-bottom: var(--line) solid var(--line-color);
+}
+
+.board-cell:nth-child(3n) {
+  border-right: 0;
+}
+
+.board-cell:nth-last-child(-n + 3) {
+  border-bottom: 0;
+}
+
+.board-cell:hover {
+  background: var(--hover-dark);
+}
+
+.board-cell:focus-visible {
+  outline: 2px solid var(--grey-100);
+}
+
+.board-cell.occupied {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.game-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}

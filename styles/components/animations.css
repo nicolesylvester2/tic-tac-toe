@@ -1,0 +1,85 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.9s ease-out;
+}
+
+@keyframes pulse-once {
+  0% {
+    box-shadow: 0 0 20px var(--glow-cosmic),
+                0 0 40px var(--glow-cosmic-soft);
+  }
+  50% {
+    box-shadow: 0 0 30px var(--glow-cosmic),
+                0 0 50px var(--glow-cosmic-medium),
+                0 0 70px var(--glow-cosmic-soft);
+  }
+  100% {
+    box-shadow: 0 0 20px var(--glow-cosmic-medium),
+                0 0 40px var(--glow-cosmic-soft);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 20px var(--g1),
+      0 0 40px var(--g2),
+      0 0 60px var(--g3),
+      0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 30px var(--g1),
+      0 0 50px var(--g2),
+      0 0 70px var(--g3),
+      0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1.05)
+            drop-shadow(0 0 4px var(--glow-warm-soft));
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.12) rotate(10deg);
+    filter: brightness(1.1)
+            drop-shadow(0 0 8px var(--glow-warm))
+            drop-shadow(0 0 16px var(--glow-warm-medium))
+            drop-shadow(0 0 20px var(--glow-warm-soft));
+  }
+}
+
+.winning-piece {
+  animation: twinkle 1.5s ease-in-out infinite;
+}

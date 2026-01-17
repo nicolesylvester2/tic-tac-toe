@@ -1,0 +1,73 @@
+/* core.css */
+:root {
+  --font-base: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  --w-extralight: 200;
+  --w-light: 300;
+  --w-regular: 400;
+  --w-medium: 500;
+  --w-semibold: 600;
+  --w-bold: 700;
+  --w-extrabold: 800;
+
+  --black: rgb(44, 40, 37);
+  --white: rgb(255, 255, 255);
+  --hover-dark: rgba(255, 255, 255, 0.06);
+  --grey-900: rgb(34, 32, 48);
+  --grey-500: rgb(132, 128, 148);
+  --grey-300: rgb(192, 188, 206);
+  --grey-100: rgb(234, 232, 242);
+  --line-color: rgb(234, 232, 242);
+
+  --dark: rgb(35, 25, 66);
+  --primary: rgb(159, 134, 192);
+  --secondary: rgb(190, 149, 196);
+  --tertiary: rgb(224, 177, 203);
+  --glow-medium: rgba(224, 177, 203, 0.9);
+  --glow-medium-medium: rgba(224, 177, 203, 0.6);
+  --glow-medium-soft: rgba(224, 177, 203, 0.3);
+  --glow: rgb(246, 233, 190);
+  --glow-warm: rgba(246, 233, 190, 0.9);
+  --glow-warm-medium: rgba(246, 233, 190, 0.6);
+  --glow-warm-soft: rgba(246, 233, 190, 0.3);
+  --glow-cool: rgba(159, 134, 192, 0.9);
+  --glow-cool-medium: rgba(159, 134, 192, 0.6);
+  --glow-cool-soft: rgba(159, 134, 192, 0.3);
+  --success: rgb(140, 210, 195);
+  --warning: rgb(230, 185, 120);
+  --error: rgb(224, 120, 135);
+  --glow-easy: rgba(224, 120, 135, 0.9);
+  --glow-easy-medium: rgba(224, 120, 135, 0.6);
+  --glow-easy-soft: rgba(224, 120, 135, 0.3);
+  --blue: rgb(120, 170, 220);
+  --glow-hard: rgba(120, 170, 220, 0.9);
+  --glow-hard-medium: rgba(120, 170, 220, 0.6);
+  --glow-hard-soft: rgba(120, 170, 220, 0.3);
+  --glow-cosmic: rgba(255, 255, 255, 0.9);
+  --glow-cosmic-medium: rgba(255, 255, 255, 0.6);
+  --glow-cosmic-soft: rgba(255, 255, 255, 0.3);
+
+  --size-minus-5: 0.3277rem;
+  --size-minus-4: 0.4096rem;
+  --size-minus-3: 0.512rem;
+  --size-minus-2: 0.64rem;
+  --size-minus-1: 0.8rem;
+
+  --size-0: 1rem; /* major thirds */
+
+  --size-plus-1: 1.25rem;
+  --size-plus-2: 1.563rem;
+  --size-plus-3: 1.953rem;
+  --size-plus-4: 2.441rem;
+  --size-plus-5: 3.052rem;
+  --size-plus-6: 3.815rem;
+
+  --button-border-radius: 3px;
+  --modal-border-radius: 15px;
+  --button-height: 37px;
+  --body-line-height: 1.5rem;
+
+  --board-size: 360px;
+  --line: 2px;
+}

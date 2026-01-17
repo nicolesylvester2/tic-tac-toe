@@ -1,0 +1,61 @@
+.button {
+  height: var(--button-height);
+  padding: 0 var(--size-plus-1);
+  border: 1px solid var(--grey-300);
+  border-radius: var(--button-border-radius);
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--grey-100);
+}
+
+.button.primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.button.primary:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  box-shadow: 0 0 15px var(--glow-cosmic-soft),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button.primary:active {
+  box-shadow: 0 0 20px var(--glow-cosmic-medium),
+              0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button.primary.glow-active {
+  animation: pulse-once 0.8s ease-out;
+}
+
+.close-button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+}
+
+.close-button img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.85;
+}
+
+.close-button:hover img {
+  opacity: 1;
+}
+
+.close-button:hover {
+  background: var(--hover-dark);
+  border-radius: var(--button-border-radius);
+}

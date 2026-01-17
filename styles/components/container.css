@@ -1,0 +1,17 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.container.medium-width {
+  max-width: 800px;
+  width: 90%;
+  padding: 3rem 0;
+}
+
+.container.large-width {
+  max-width: 850px;
+  width: 90%;
+  padding: 2rem 0;
+}

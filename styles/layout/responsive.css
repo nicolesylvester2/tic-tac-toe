@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .gap-xl, .gap-l {
+    gap: var(--size-plus-3);
+  }
+
+  .container.medium-width, 
+  .container.large-width {
+    padding: 1rem 0;
+  }
+
+  .margin-bottom-xl {
+    margin-bottom: 2rem;
+  }
+
+  .game-layout {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    column-gap: 5rem;
+  }
+
+  .game-layout > :nth-child(2) {
+    order: 2;
+  }
+
+  .game-layout > :nth-child(1) {
+    order: 1; 
+  }
+  .game-layout > :nth-child(3) { 
+    order: 1; 
+  }
+}
