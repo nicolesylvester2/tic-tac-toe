@@ -5,7 +5,7 @@ A cosmic-themed **Tic-Tac-Toe game prototype**.
 This project is a **static prototype**, built to explore UI/UX design rather than full game logic.
 
 **Live demo:**  
-Hosted on GitHub Pages at: **[github link]**
+Hosted on GitHub Pages [here](https://nicolesylvester2.github.io/tic-tac-toe/)
 
 
 ## What’s Included
@@ -33,7 +33,7 @@ This is intentionally a **static prototype** focused on design.
    *(or via a local development server)*
 
 You can also view the live version hosted with GitHub Pages:  
-**[github link]**
+[here](https://nicolesylvester2.github.io/tic-tac-toe/)
 
 ## Additional Notes
 All pets illustrated in the game are portraits of **my own pets**!
