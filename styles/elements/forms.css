@@ -3,7 +3,7 @@
   padding: 0 var(--size-plus-1);
   border: 1px solid var(--grey-300);
   border-radius: var(--button-border-radius);
-  background-color: transparent;
+  background-color: var(--grey-900);
   text-decoration: none;
   cursor: pointer;
   display: inline-flex;
@@ -12,7 +12,7 @@
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--grey-500);
   border-color: var(--grey-100);
 }
 
@@ -25,12 +25,12 @@
 .button.primary:hover {
   background-color: var(--secondary);
   border-color: var(--secondary);
-  box-shadow: 0 0 15px var(--glow-cosmic-soft),
+  box-shadow: 0 0 15px var(--glow-white-soft),
               0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .button.primary:active {
-  box-shadow: 0 0 20px var(--glow-cosmic-medium),
+  box-shadow: 0 0 20px var(--glow-white-medium),
               0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -39,6 +39,7 @@
 }
 
 .close-button {
+  background-color: transparent;
   width: 32px;
   height: 32px;
   padding: 0;
@@ -56,6 +57,6 @@
 }
 
 .close-button:hover {
-  background: var(--hover-dark);
+  background: var(--hover);
   border-radius: var(--button-border-radius);
 }

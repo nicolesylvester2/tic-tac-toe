@@ -27,13 +27,6 @@
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../resources/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Playfair Display';
   src: url('../resources/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -51,12 +44,5 @@
   font-family: 'Playfair Display';
   src: url('../resources/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
   font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url('../resources/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
   font-style: normal;
 }

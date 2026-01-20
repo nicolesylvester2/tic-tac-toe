@@ -5,10 +5,6 @@ body {
   line-height: var(--body-line-height);
 }
 
-.display {
-  font-family: var(--font-display);
-}
-
 h1 {
   font-weight: var(--w-semibold);
   font-size: clamp(1.9531rem, 4vw, 2.4414rem);
@@ -46,15 +42,24 @@ p {
   line-height: var(--body-line-height);
 }
 
-em, i { font-style: italic; }
-strong, b { font-weight: var(--w-semibold); }
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: var(--w-semibold);
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey-100)
+}
 
 .uppercase {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
-a {
-  text-decoration: none;
-  color: var(--grey-100)
+.display {
+  font-family: var(--font-display);
 }

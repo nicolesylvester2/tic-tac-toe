@@ -10,57 +10,64 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.circle-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
 .opponent:hover .circle-button,
 .opponent:focus-visible .circle-button {
   box-shadow:
-    0 0 20px var(--g1),
-    0 0 40px var(--g2),
-    0 0 60px var(--g3),
+    0 0 20px var(--glow-1),
+    0 0 40px var(--glow-2),
+    0 0 60px var(--glow-3),
     0 4px 12px rgba(0, 0, 0, 0.3);
   transform: scale(1.04);
 }
 
 .player-you {
-  --g1: var(--glow-warm);
-  --g2: var(--glow-warm-medium);
-  --g3: var(--glow-warm-soft);
+  --glow-1: var(--glow-gold);
+  --glow-2: var(--glow-gold-medium);
+  --glow-3: var(--glow-gold-soft);
 }
 
 .is-pvp {
-  --g1: var(--glow-cool);
-  --g2: var(--glow-cool-medium);
-  --g3: var(--glow-cool-soft);
+  --glow-1: var(--glow-primary);
+  --glow-2: var(--glow-primary-medium);
+  --glow-3: var(--glow-primary-soft);
 }
 
 .is-bot {
-  --g1: var(--glow-cosmic);
-  --g2: var(--glow-cosmic-medium);
-  --g3: var(--glow-cosmic-soft);
+  --glow-1: var(--glow-white);
+  --glow-2: var(--glow-white-medium);
+  --glow-3: var(--glow-white-soft);
 }
 
 .bot-easy {
-  --g1: var(--glow-easy);
-  --g2: var(--glow-easy-medium);
-  --g3: var(--glow-easy-soft);
+  --glow-1: var(--glow-red);
+  --glow-2: var(--glow-red-medium);
+  --glow-3: var(--glow-red-soft);
 }
 
 .bot-medium {
-  --g1: var(--glow-medium);
-  --g2: var(--glow-medium-medium);
-  --g3: var(--glow-medium-soft);
+  --glow-1: var(--glow-tertiary);
+  --glow-2: var(--glow-tertiary-medium);
+  --glow-3: var(--glow-tertiary-soft);
 }
 
 .bot-hard {
-  --g1: var(--glow-hard);
-  --g2: var(--glow-hard-medium);
-  --g3: var(--glow-hard-soft);
+  --glow-1: var(--glow-blue);
+  --glow-2: var(--glow-blue-medium);
+  --glow-3: var(--glow-blue-soft);
 }
 
 .current-player .circle-button {
   box-shadow:
-    0 0 20px var(--g1),
-    0 0 40px var(--g2),
-    0 0 60px var(--g3),
+    0 0 20px var(--glow-1),
+    0 0 40px var(--glow-2),
+    0 0 60px var(--glow-3),
     0 4px 12px rgba(0, 0, 0, 0.3);
 }
 

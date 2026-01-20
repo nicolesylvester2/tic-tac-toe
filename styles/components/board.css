@@ -32,7 +32,7 @@
 }
 
 .board-cell:hover {
-  background: var(--hover-dark);
+  background: var(--hover);
 }
 
 .board-cell:focus-visible {
